@@ -28,8 +28,10 @@ INSERT INTO usuarios (cedula_identidad,nombre,primer_apellido,segundo_apellido,f
 
 • Para listar a todos lo usuarios: GET ‘/usuarios’:
 curl http://localhost:3000/usuarios
+
 • Para listar un usuario en especifico GET ‘/usuarios/:id_usuario’
 curl http://localhost:3000/usuarios/1
+
 • Para crear un usuario POST ‘/usuarios’
 curl -X POST -H "Content-Type: application/json" -d '{
   "cedula_identidad": "123456789",
@@ -38,6 +40,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
   "segundo_apellido": "Smith",
   "fecha_nacimiento": "1990-01-01"
 }' http://localhost:3000/usuarios
+
 • Para actualizar los datos de un usuario: PUT ‘/usuarios/:id_usuario’
 curl -X PUT -H "Content-Type: application/json" -d '{
   "cedula_identidad": "987654321",
@@ -46,9 +49,12 @@ curl -X PUT -H "Content-Type: application/json" -d '{
   "segundo_apellido": "Smith",
   "fecha_nacimiento": "1992-02-02"
 }' http://localhost:3000/usuarios/1
+
 • Para eliminar a un usuario: DELETE ‘usuarios/:id_usuario’
 curl -X DELETE http://localhost:3000/usuarios/1
+
 • Para mostrar el promedio de edades de los usuarios: GET‘/usuarios/promedio-edad’
 curl http://localhost:3000/usuarios/promedio-edad
+
 • Para mostrar la version del api rest: GET ‘/estado’
 curl http://localhost:3000/estado
