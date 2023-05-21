@@ -5,8 +5,11 @@
 No deben olvidar ejecutar los comandos
 npm install --save express
 npm install --save pg
+
 //Crear una BD en postgres llamada postgres con usuario postgres y paswoord postgres que tiene una tabla de usuarios 
+
 //Script creacion de la BD
+
 CREATE TABLE usuarios (
     id SERIAL PRIMARY KEY,
     cedula_identidad VARCHAR(50) not null,
