@@ -22,7 +22,7 @@ CREATE TABLE usuarios (
 //Insert de valores para que la BD no este vacia y pruebas
 INSERT INTO usuarios (cedula_identidad,nombre,primer_apellido,segundo_apellido,fecha_nacimiento) VALUES ('6456520','Aldo','Ayala','Ramos','1986-05-06');
 
-//Para ejecutar el servidor debes ingresar el siguiente comando en la terminal: node app.js
+//Para ejecutar el servidor debes ingresar el siguiente comando en la terminal: node index.js
 
 //Para ejecuta las pruebas o verificar los endpoints puedes usar POSTMAN o cURL:
 
